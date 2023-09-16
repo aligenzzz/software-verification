@@ -24,3 +24,13 @@ def check_age(age):
         print(f'Error: {e}')
         exit(-1)
 
+
+# counting age characteristics
+def get_ages(people):
+    ages = [person.age for person in people]
+
+    min_age = min(ages)
+    max_age = max(ages)
+    aver_age = round(sum(ages) / len(ages), 2)
+
+    return min_age, max_age, aver_age

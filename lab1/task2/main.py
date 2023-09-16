@@ -1,17 +1,10 @@
-from functions import check_name, check_age
-
-
-class Person:
-    def __init__(self, lastname, firstname, age_):
-        self.last_name = lastname
-        self.first_name = firstname
-        self.age = age_
-
-
-people = []
+from functions import check_name, check_age, get_ages
+from person import Person
 
 
 if __name__ == '__main__':
+    people = []
+
     # input of data with checking it
     while True:
         first_name = check_name(input('Enter the first name: '))
@@ -29,15 +22,9 @@ if __name__ == '__main__':
                                  for person in people)
     print('\n' + formatted_people)
 
-    # counting characteristics
-    ages = [person.age for person in people]
-    min_age = min(ages)
-    max_age = max(ages)
-    aver_age = round(sum(ages) / len(ages), 2)
+    # getting age characteristics
+    ages = get_ages(people)
     print(f'\n'
-          f'minimum age = {min_age}\n'
-          f'maximum age = {max_age}\n'
-          f'average age = {aver_age}')
-
-
-
+          f'minimum age = {ages[0]}\n'
+          f'maximum age = {ages[1]}\n'
+          f'average age = {ages[2]}')
