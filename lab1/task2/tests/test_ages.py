@@ -1,7 +1,7 @@
 import unittest
 
 from task2.functions import get_ages
-from constants import PEOPLE, EXPECTED_AGES
+from task2.tests.constants import PEOPLE, EXPECTED_AGES
 
 
 class TestAges(unittest.TestCase):

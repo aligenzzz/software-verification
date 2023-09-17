@@ -6,4 +6,4 @@ if __name__ == "__main__":
     url = args[0]
     directory = args[1]
 
-    download(url, directory)
+    download(url, directory, True)

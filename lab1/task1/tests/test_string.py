@@ -1,7 +1,7 @@
 import unittest
 
 from task1.functions import get_string
-from constants import STATIC_PART, A, B
+from task1.tests.constants import STATIC_PART, A, B
 
 
 class TestString(unittest.TestCase):
