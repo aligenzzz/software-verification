@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="zoo_site.main.models.Animal.objects" />
+          <option value="zoo_site.main.models.Staffer.DoesNotExist" />
+          <option value="zoo_site.main.models.Staffer.*" />
+          <option value="zoo_site.main.models.Placement.objects" />
+          <option value="zoo_site.main.models.Fodder.*" />
+          <option value="zoo_site.main.models.Client.*" />
+          <option value="zoo_site.main.models.Article.*" />
+          <option value="zoo_site.main.models.Animal.*" />
+          <option value="zoo_site.main.models.Placement.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
